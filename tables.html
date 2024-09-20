@@ -9,53 +9,57 @@
             margin: 0;
         }
 
-        table {
+        .tab1 {
             margin: 0;
             height: 300px;
             width: 400px;
-            border: 1px solid gray;
             border-collapse: collapse;
+            
             
         }
 
-        th, td {
-            border: 1px solid black;
-            text-align: start;
+        .tab2 {
+            width: 400px;
+            height: 80%;
         }
 
+        th, td {
+            border: 2px dotted white;
+            text-align: start;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <table>
+    <table class="tab1">
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Age</th>
+            <th style="width: 100%;">DECEMBER</th>
         </tr>
-        <tr>
-            <td>Onyeka</th>
-            <td>Gerald</th>
-            <td>18</th>
-        </tr>
-        <tr>
-            <td>Onyeka</th>
-            <td>Gerald</th>
-            <td>18</th>
-        </tr>
-        <tr>
-            <td>Onyeka</th>
-            <td>Gerald</th>
-            <td>18</th>
-        </tr>
-        <tr>
-            <td>Onyeka</th>
-            <td>Gerald</th>
-            <td>18</th>
-        </tr>
-        <tr>
-            <td>Onyeka</th>
-            <td>Gerald</th>
-            <td>18</th>
+        <tr style="height: 80%;">
+            <table class="tab2">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </tr>
     </table>
 </body>
