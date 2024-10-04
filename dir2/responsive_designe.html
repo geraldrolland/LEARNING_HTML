@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
+            height: 450px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 50%;
+            height: 450px;
+        }
+
+        .card-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            row-gap: 15px;
+        }
+
+        img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            
+        }
+
+        @media screen and (min-width: 992px) {
+            
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+                flex-wrap: wrap;
+                height: 700px;
+            }
+
+            .card {
+                width: 100%;
+                height: 350px;
+            }
+
+            .card-container {
+                row-gap: 15px;
+            }
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: red;" class="card"></div>
+        <div style="background-color: blue;" class="card"></div>        
+    </div>
+
+    <div class="card-container">
+        <img src="./becca-tapert--A_Sx8GrRWg-unsplash.jpg" alt="">
+        <img src="./brazilian-man-having-guarana-drink-outdoors.jpg" alt="">
+        <img src="./fons-heijnsbroek-L0uu1j6TCgg-unsplash.jpg
+        " alt="">
+        <img src="./fons-heijnsbroek-zHMzL8Xcmr4-unsplash.jpg" alt="">
+        <img src="./miguel-angel-hernandez-cObuSxlcUac-unsplash.jpg" alt="">
+        <img src="./tabitha-turner-Lc9czM0IGfU-unsplash.jpg" alt="">
+        <img src="./fons-heijnsbroek-L0uu1j6TCgg-unsplash.jpg
+        " alt="">
+        <img src="./fons-heijnsbroek-wlc2B1Kd9Ig-unsplash.jpg" alt="">
+    </div>
+</body>
+</html>

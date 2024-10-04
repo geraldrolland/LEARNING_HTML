@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video controls id="vid" style=" border: 1px solid gray; margin: auto; display: block; border-radius: 15px;" src=""></video>
+    <audio id="aud" src=""></audio>
+
+</body>
+<script>
+    var isRecorderpaused = false
+    document.getElementById("vid").addEventListener("click", () => {
+        console.log("event called")
+        if (document.getElementById("vid").paused) {
+            console.log("event called")
+            isRecorderpaused = true
+        }
+    })
+    document.body.addEventListener("click", () => {
+        var chunks = []
+        console.log("error")
+        navigator.mediaDevices.getUserMedia({video:true, audio: true}).then(stream => {
+            document.getElementById("vid").srcObject = stream
+            document.getElementById("vid").play()
+
+            document.getElementById("aud").srcObject = stream
+            document.getElementById("aud").play()
+            console.log("this", document.getElementById("vid").videoWidth)
+            const mediaRecorder = new MediaRecorder(stream)
+            mediaRecorder.start()
+            console.log(mediaRecorder.state)
+            mediaRecorder.ondataavailable = (e) => {
+                chunks.push(e.data)
+            }
+            console.log("pause state", document.getElementById("vid").paused)
+            if (isRecorderPaused === true) {
+                   mediaRecorder.stop();
+                   const blob = new Blob(chunks, { type: "video/mp4; codecs=vp9" });
+                    const media = URL.createObjectURL(blob);
+                    const video = document.createElement("video");
+                    video.src = media; // Use src for blob URLs
+                    document.body.append(video);
+                }
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    })
+</script>
+</html>
