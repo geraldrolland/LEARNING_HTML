@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input  class="myForm" name="animal_with_backbone" id="mammal" value="Mammal" type="radio">
+        <input name="animal_with_backbone"   id="rep" class="myForm"  value="reptiles" type="radio" >
+        <input name="animal_with_backbone"  id="av" class="myForm" value="aves" type="radio">
+        <input name="animal_with_backbone"  id="crust" class="myForm" value="Crustacian" type="radio">Crustacian</input>
+        <button onclick="getSelect()">click me</button>
+</body>
+<script>
+    function getSelect() {
+        const myInputs = document.querySelectorAll(".myForm")
+        myInputs.forEach(input => {
+            if (input.checked) {
+                console.log(input.value)
+            }
+        })
+    }
+</script>
+</html>
