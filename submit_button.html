@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="userInfo" novalidate>
+        <label style="display: block;" for="first_name">First Name</label>
+        <input required style="display: block;" id="first_name" type="text" name="first_name">
+        <label style="display: block;" for="last_name">Last Name</label>
+        <input required style="display: block;" id="last_name" type="text" name="last_name">
+        <input onclick="printInput()" style="display: block;" type="submit" value="submit">
+
+    </form>
+
+</body>
+<script>
+    const printInput = () => {
+        const inputs = document.querySelectorAll('input[type="text"]')
+        inputs.forEach(input => {
+            if (input.value) {
+                console.log(input.value)
+            }
+        })
+    }
+</script>
+</html>

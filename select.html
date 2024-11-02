@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="state">State of Origin</label>
+    <select name="stateOfOrigin" id="state">
+        <option value="none">None</option>
+        <option value="Imo">Imo</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Abuja">Abuja</option>
+        <option value="Ogun">Ogun</option>
+    </select>
+    <button onclick="select()" >click</button>
+</body>
+
+<script>
+    const select = () => {
+    const select = document.querySelector('select')
+    if (select.value === "none") {
+        alert("please select a state")
+    } else {
+        console.log(select.value)
+    }
+ 
+    }
+</script>
+</html>
