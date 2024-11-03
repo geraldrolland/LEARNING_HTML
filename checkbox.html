@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input value="mammal" name="animal_with_backbone" id="mammal" type="checkbox">
+    <label for="mammal">Mammal</label>
+    <input value="aves" name="animal_with_backbone" id="aves" type="checkbox">
+    <label for="aves">Aves</label>
+    <input value="reptiles" name="animal_with_backbone" id="rep" type="checkbox">
+    <label for="rep">Reptiles</label>
+    <input value="Crustacian" name="animal_with_backbone" id="crust" type="checkbox">
+    <label for="crust">Crustacian</label>
+    <button onclick="printSelectedInput()" style="width: 80px; height: 30px; ;"> click me</button>
+</body>
+
+<script>
+    const printSelectedInput = ( ) => {
+        const my_inputs = document.querySelectorAll('input[type="checkbox"]')
+        my_inputs.forEach(input => {
+            if(input.checked) {
+                console.log(input.value)
+            }
+        })
+    }
+</script>
+</html>

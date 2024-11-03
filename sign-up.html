@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffff;
+        }
+
+        .container {
+            width: 1000px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+        }
+
+        .signup-container {
+            width: 320px;
+            height: 500px;
+        }
+        .title {
+            font-family: "Poppins";
+            font-size: 25px;
+        }
+
+        form {
+            width: 100%;
+            height: 100%;
+        }
+
+        .input-container {
+            width: 100%;
+            height: 55px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .inputlabel {
+            font-family: "Poppins";
+            font-size: 15px;
+        }
+        .textinput {
+            width: 100%;
+            height: 32px;
+            padding-left: 10px;
+            border-radius: 16px;
+            border: 1px solid #F0F0F0;
+            color: gray;
+            font-size: 15px;
+        }
+
+        .textinput:focus {
+            outline: none;
+        }
+
+        .checkbox-container {
+            margin-top: 20px;
+            width: 270px;
+            height: 20px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .checkbox {
+            margin-right: 5px;
+        }
+
+        .checkboxlabel {
+            font-family: "Poppins";
+            font-size: 12px;
+        }
+
+        .submit {
+            margin-top: 20px;
+            width: 100%;
+            height: 35px;
+            border-radius: 17.5px;
+            border: none;
+            background-color: #3D5300;
+            color: #ffff;
+            font-family: "Poppins";
+        }
+
+        .or-container {
+            margin-top: 20px;
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .twodiv {
+            height: 1px;
+            width: 40%;
+            background-color: #F0F0F0;
+        }
+
+        .or {
+            font-family: "Poppins";
+            font-size: 14px;
+            color: black;
+        }
+
+        .otherLogin {
+            margin-top: 20px;
+            width: 100%;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .login {
+            height: 100%;
+            width: 47%;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+
+        .logintitle {
+            font-size: 12px;
+        }
+
+        .optiontosignin {
+            font-size: 12px;
+            margin: auto;
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            font-family: "Poppins";
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="signup-container">
+
+                    <form action="">
+                        <h1 class="title">Get started Now
+                        </h1>
+                        <div 
+                        style="margin-top: 20px;" 
+                        class="input-container">
+                        <label class="inputlabel" for="">Name</label>
+                        <input placeholder="Enter your name" required class="textinput" type="text">
+                    </div>
+                    <div 
+                    style="margin-top: 13px;" 
+                    class="input-container">
+                    <label class="inputlabel" for="">Email address</label>
+                    <input placeholder="Enter your email" required class="textinput" type="email">
+                </div>
+                <div 
+                style="margin-top: 13px;" 
+                class="input-container">
+                <label class="inputlabel" for="">Password</label>
+                <input placeholder="Enter your password" required class="textinput" type="text">
+            </div>
+            <div class="checkbox-container">
+                <input class="checkbox" type="checkbox">
+                <label class="checkboxlabel" for="">I agree to the <span style="text-decoration: underline;">terms & policy</span></label>
+            </div>
+            <button class="submit">Signup</button>
+            <div class="or-container">
+                <div class="twodiv"></div>
+                <h1 class="or">Or</h1>
+                <div class="twodiv"></div>
+            </div>
+            <div class="otherlogin">
+                <button class="login"><img src="./google_log.png" alt="" style="width: 20px; margin-right: 8px;"><h1 class="logintitle">Sign in with Google</h1></button>
+                <button class="login"><img src="./apple-logo (2).png" alt="" style="width: 20px; margin-right: 8px;"><h1 class="logintitle">Sign in with Google</h1></button>
+            </div>
+            <h1 class="optiontosignin">Have an account? <span style="color: #006BFF;"> &nbsp; sign in</span></h1>
+            </form>
+            </div>
+        </div>
+        <div class="section">
+            <img class="signup-img" src="./chris-lee-70l1tDAI6rM-unsplash 2.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
