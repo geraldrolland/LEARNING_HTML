@@ -1,0 +1,216 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=poppins">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffff;
+    }
+
+    .container{
+     width: 1000px;
+     height: 650px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+
+    .login-container{
+        width: 320px;
+        height: 550px;
+        margin-left: 60px;
+    }
+
+    .title{
+        font-family: poppins;
+        font-size: 25px;
+    }
+      
+      .other-title{
+        font-family: poppins;
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      .inputlabel{
+        font-family: poppins;
+        font-size: 15px;
+      }
+
+      .input-container{
+        width: 100%;
+        height: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 15px;
+      }
+      .textinput{
+        width: 100%;
+        height: 32px;
+        padding-left: 14px;
+        border-radius: 15px;
+        color: gray;
+        font-size: 12px;
+        border: 1px solid #f0f0f0;
+      }
+
+     form{
+        width: 100%;
+        height: 100%;
+     }
+      .textinput:focus{
+        outline: none;
+      }
+      .checkbox-container{
+        margin-top: 20px;
+        width: 270px;
+        height: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      .checkbox{
+        margin-right: 10px;
+      }
+     .checkbox-label{
+        font-family: poppins;
+        font-size: 11px;
+     }
+      .login-button{
+        margin-top: 23px;
+        font-family: poppins;
+        font-size: 20px;
+        width: 100%;
+        height: 35px;
+        border-radius: 17.5px;
+        background-color: #3d5300;
+        color: #ffff;
+      }
+         .or-container{
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 20px;
+         }
+
+        .lines{
+            height: 1px;
+            width: 40%;
+            background-color: #f0f0f0;
+        }
+         .or{
+            font-family: poppins;
+            font-size: 14px;
+            color: black;
+         }
+
+          .login-title{
+            font-size: 12px;
+          }
+        .other-login{
+          margin-top: 77px;
+          width: 100%;
+          height: 35px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .login{
+            height: 100%;
+            width: 47%;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+         .signup{
+            font-size: 12px;
+            margin: auto;
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            font-family: poppins;
+         }
+         .img-signup{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+         }
+         .section{
+            height: 100%;
+            width: 50%;
+         }
+</style>
+<body>
+    <div class="container">
+        <div class="login-container">
+
+
+           <form action="">
+            <h1 class="title">
+              Welcome Back!
+            </h1>
+
+            <h1 class="other-title">
+          enter your credentials to access your account
+            </h1>
+
+             <div class="input-container"  style="margin-top: 50px;">
+                <label  class="inputlabel">Email address</label>
+                <input  placeholder="enter your email" required class="textinput" type="email">
+             </div>
+             
+             <div class="input-container"  style="margin-top: 25px;">
+                <label  class="inputlabel">Password  <span style="margin-left: 185px; font-size: 10px; font-family: poppins; color: blue;">forgot password</span></label>
+                <input  placeholder="enter your password" required class="textinput" type="text">
+             </div>
+
+               <div class="checkbox-container">
+                <input class="checkbox" type="checkbox">
+                <label  class="checkbox-label">Remember for 30 Days</label>
+               </div>
+                  
+                 <button class="login-button">Login</button>
+                <div class="or-container">
+                  <div class="lines"></div>
+                  <h1 class="or">Or</h1>
+                  <div class="lines"></div>
+                </div>
+
+                <div class="other-login">
+                    <button class="login"><img  src="./google.png" alt=""  style=" width: 20px; margin-right: 8px;"> <h1 class="login-title"> sign in with google</h1></button>
+                    <button class="login"> <img src="./apple.png" alt="" style="width: 20px; margin-right: 8px;"> <h1 class="login-title">sign in with apple</h1></button>
+                </div>
+
+                <div>
+                    <h1 class="signup">Dont have an account? <span style="color: blue;"> &nbsp; sign up</span></h1>
+                </div>
+           </form>
+        </div>
+        <div class="section">
+            <img src="./chris-lee-70l1tDAI6rM-unsplash 2.png" alt=""  class="img-signup">
+        </div>
+    </div>
+</body>
+</html>
