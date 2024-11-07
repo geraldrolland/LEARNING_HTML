@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Document</title>
+     <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+          }
+         body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(238, 233, 233);
+         }
+        .overall-container{
+            width: 1100px;
+            height: 641px;
+            background-color: #1A4A60CC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+         .container{
+            width: 900px;
+            height: 560px;
+            background: #1F485B;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 31px;
+         }
+         .vr-container{
+          width: 100%;
+          height: 100%;
+         }
+         .create-container{
+          width: 1600px;
+          height: 100%;
+          border-radius: 31px;
+          background-color: white;
+         }
+          .write-up{
+          font-family: "Poppins";
+          font-size: 19px;
+          margin: 22px;
+          color: white;
+          }
+          .img{
+            width: 350px;
+            height: 250px;
+            margin-left: 2px;
+            overflow: visible;
+          }
+          .create-container{
+
+
+          }
+
+          .english{
+            font-family: "Poppins";
+            font-size: 12px;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            margin-right: 42px;
+            margin-top: 20px;
+          }
+          
+          .create-account{
+            font-size: 20px;
+            font-family: "Poppins";
+            margin-left: 89px;
+            font-weight: 1000;
+            margin-top: 50px;
+          }
+          .login-title{
+            font-size: 12px;
+          }
+        .other-login{
+          margin-top: 30px;
+          width: 70%;
+          height: 35px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-left: 90px;
+        }
+        .login{
+            height: 100%;
+            width: 47%;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+        .twodiv{
+         width: 10px;
+         border:1px solid #CDCACA;
+         margin: 13px;
+        }
+         
+        .or-container{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 30px;
+         margin-left: 22px;
+        }
+        .or{
+          font-family: "Poppins";
+          color: #CDCACA;
+        }
+         .name-container{
+          width: 390px;
+          height: 30px;
+          margin-left: 50px;
+          border: transparent;
+          border-bottom: 1px solid  #F3F3F3;
+          margin-left: 88px;
+          font-family: "Poppins";
+          font-size: 11px;
+         }
+         .name-container:hover{
+          border: transparent;
+          outline: none;
+         }
+         .password-container{
+          width: 390px;
+          height: 30px;
+          margin-left: 50px;
+          border: transparent;
+          border-bottom: 1px solid  #F3F3F3;
+          margin-left: 88px;
+          font-family: "Poppins";
+          font-size: 11px;
+         }
+         .password-container:hover{
+          border: transparent;
+          outline: none;
+         }
+
+         .create-button{
+          background-color: #1F485B;
+          color: #FFFFFF;
+          margin-top: 30px;
+          width: 393px;
+          height:40px;
+          border-radius: 5px;
+          margin-left: 88px;
+          border: none;
+         }
+         .optiontosignin {
+            font-size: 12px;
+            margin: auto;
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            font-family: "Poppins";
+            margin-left: -29px;
+           color: #BEBCBC;
+        }
+     </style>
+</head>
+<body>
+    <div class="overall-container">
+     <div class="container">
+           <div class="vr-container">
+            <div> <img src="./pngegg (70) 1.png" alt=""></div>
+             <p class="write-up">Getting <br> Started With <br> VR Creation</p>
+             <img class="img"  src="./Abstraction.png" alt="">
+           </div>
+
+          <div class="create-container">
+           <p class="english">English (UK) <span><select style="border: none;" name="" id=""></select></span></p>
+           <h1 class="create-account">Create Account</h1>
+           <div class="other-login">
+            <button class="login"><img  src="./google.png" alt=""  style=" width: 20px; margin-right: 8px;"> <h1 class="login-title"> Signin with Google</h1></button>
+            <button class="login"> <img src="./pngegg (69) 1.png" alt="" style="width: 20px; margin-right: 8px;"> <h1 class="login-title">Signin with Facebook</h1></button>
+           </div>
+           <div class="or-container">
+           <div class="twodiv"></div>
+           <p class="or">OR</p>
+           <div class="twodiv"></div>
+          </div>
+           <div>
+            <div>
+              <input class="name-container"  placeholder="Full Name"  type="text">
+            </div>
+            <div style="margin-top: 30px;">
+              <input class="name-container"  placeholder="Email"  type="text">
+            </div>
+            <div style="margin-top: 30px;">
+              <input class="password-container"  placeholder="Password"  type="text">
+              <span style="margin-left: -25px;">&#x1F512;</span>
+            </div>
+             <button class="create-button">Create Account</button>
+           </div>
+           <h1 class="optiontosignin"> Already have an account? <span style="color: #006BFF;"> &nbsp; Log In</span></h1>
+          </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
